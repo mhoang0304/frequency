@@ -2,7 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+@layer base {
+  @font-face {
+    font-family: "NotoSans";
+    src: url("/fonts/NotoSans/NotoSans-Regular.eot");
+    src: url("/fonts/NotoSans/NotoSans-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("/fonts/NotoSans/NotoSans-Regular.woff2") format("woff2"),
+      url("/fonts/NotoSans/NotoSans-Regular.woff") format("woff"),
+      url("/fonts/NotoSans/NotoSans-Regular.ttf") format("truetype"),
+      url("/fonts/NotoSans/NotoSans-Regular.svg#NotoSans-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NotoSans";
+    src: url("/fonts/NotoSans/NotoSans-SemiBold.eot");
+    src: url("/fonts/NotoSans/NotoSans-SemiBold.eot?#iefix")
+        format("embedded-opentype"),
+      url("/fonts/NotoSans/NotoSans-SemiBold.woff2") format("woff2"),
+      url("/fonts/NotoSans/NotoSans-SemiBold.woff") format("woff"),
+      url("/fonts/NotoSans/NotoSans-SemiBold.ttf") format("truetype"),
+      url("/fonts/NotoSans/NotoSans-SemiBold.svg#NotoSans-SemiBold")
+        format("svg");
+    font-weight: 600;
+  }
+
+  body {
+    font-family: "NotoSans";
+    font-size: 16px;
+  }
 }
